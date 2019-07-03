@@ -2,6 +2,7 @@
 @import 'variables/fonts.less';
 @import 'elements/menu.less';
 @import 'elements/section.less';
+@import 'elements/media-queries.less';
 @import 'elements/footer.less';
 @import 'elements/mentions.less';
 @import 'elements/team.less';
@@ -9,6 +10,8 @@
 @import 'elements/apropos.less';
 @import 'elements/swiper.less';
 @import 'elements/wait.less';
+@import 'elements/accessibility.less';
+@import 'elements/video.less';
 
 /* latin-ext */
 @font-face {
@@ -136,9 +139,18 @@ img {
     font-weight: @weight-700;
     font-size: @body-size14;
     transition-delay: 0.1s;
+    -webkit-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -moz-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -o-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75), background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 .button:hover {
     background-color: @bhover;
+    cursor: pointer;
+    -webkit-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),   background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -moz-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -o-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 .button:active {
     background-color: @bfocus;
@@ -160,11 +172,20 @@ img {
     border: 1px solid @main-blue;
     font-size: @body-size14;
     text-align: center;
+    -webkit-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),   background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -moz-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -o-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 .button-second:hover {
     color: @bhover;
     background-color: @white;
     border: 1px solid @bhover;
+    cursor: pointer;
+    -webkit-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),   background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -moz-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -o-transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    transition: background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75),  background-color 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 .button-second:active {
     color: @bfocus;
@@ -173,4 +194,16 @@ img {
 }
 .button-second:disabled {
     border-color: @bdisabled;
+}
+.button-disabled {
+    border-color: @bdisabled;
+    color: @bdisabled;
+    pointer-events: none;
+}
+a.button-second {
+    text-decoration: none;
+}
+
+.pink {
+    color: @pink;
 }

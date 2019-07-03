@@ -8,7 +8,7 @@
         padding: 0;
     }
     section h3, section p{
-        text-align: right;
+        text-align: justify!important;
         padding: 5%;
     }
     .mySlides{
@@ -37,7 +37,9 @@
         padding: 10%;
     }
 
-
+    .Absolute-Center {
+        margin: auto;
+    }
 
     #apropos {
         background: linear-gradient(rgba(0, 0, 0, 0.45),
@@ -49,6 +51,7 @@
         background-size: cover;
         width: 100vw;
         height: 100vh;
+        color: @white;
         
         position: relative;
         display: -ms-flexbox;
@@ -88,16 +91,48 @@
             background-color: #fff;
             h1, h2, h3, p, label {
                 color: @dark-background;
+                text-align: left;
+                margin-left: 5%;
             }
             .team-desc h3 {
                 color: @white;
             }
             .col.slide-content{
-                margin-top: 10%;
+                margin-top: 5%;
             }    
         }
-        .slide-title{
+       /*  .slide-title{
             margin-bottom: 10%;
-        }    
+        }     */
     }
+    .whoareu {
+        text-align: justify;
+    }
+    .row.container-fluid {
+        margin: auto;
+        width: 90%;
+        padding: 5% 0%;
+
+        @media (max-width:767.98px) {
+            .slide-content-2 {
+                display: inline-flex;
+                top: 50%;
+                transform: translateY(50%);
+            }
+
+        }
+
+        @media (min-width:767.98px) {
+            .slide-content-2 {
+                display: block;
+            }
+
+        }
+
+        img {
+            min-width: 250px;
+        }
+
+    }
+
 }

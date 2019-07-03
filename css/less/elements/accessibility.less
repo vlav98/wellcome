@@ -1,0 +1,86 @@
+.access-btn {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  z-index: 9999;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: @main-blue;
+  box-shadow: 0px 2px 5px @dark-grey;
+
+  i {
+    font-size: 2rem;
+    display: block;
+    line-height: 55px!important;
+    color: @white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s;
+  }
+}
+.access-panel {
+  z-index: 999;
+  position: absolute;
+  min-height: 100vh;
+  background: @white;
+  left: 0;
+  top: 0;
+  display: none;
+  .panel-content {
+    min-height: 100vh;
+    background: @white;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (min-width: 767.98px) {
+  .access-panel {
+    width: 30vw;
+    overflow: auto;
+    .panel-content {
+      margin-top: 5%;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .access-panel {
+    width: 100vw;
+    overflow: auto;
+
+    .panel-content {
+    }
+  }
+}
+
+.btn-size {
+  margin: 10px;
+  border-radius: 2px;
+  font-weight: @weight-700;
+  color: @main-blue;
+  background-color: @white;
+  border: 1px solid @main-blue;
+  font-size: @body-size14;
+  text-align: center;
+}
+.btn-size:hover {
+  color: @bhover;
+  background-color: @white;
+  border: 1px solid @bhover;
+}
+.btn-size:active {
+  color: @bfocus;
+  background-color: @white;
+  border: 1px solid @bfocus;
+}
+.btn-size:disabled {
+  border-color: @bdisabled;
+}

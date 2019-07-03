@@ -3,7 +3,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));/*     transition: top 0.2s ease-in-out; */
     width: 100%;
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 999;
@@ -17,9 +17,7 @@
     @media (max-width:992px) {
     }
 
-    ul,
-    li,
-    a {
+    ul, li, a {
         color: @white;
         list-style: none;
         text-transform: @caps;
@@ -36,8 +34,7 @@
     }
 
     @media (min-width:992px) {
-        ul,
-        li {
+        ul, li {
             display: inline;
         }
 
@@ -70,9 +67,9 @@
             .qnav {
                 margin: 32px;
                 background-color: #B7B7B7;
-                width: 4px;
+                width: 2px;
                 height: 100px;
-                transition: 0.2s;
+                transition: 0.1s;
 
                 .js-scrollTo {
                     width: 100%;
@@ -94,7 +91,6 @@
 }
 @media (max-width:767.98px) {
     .pagination {
-        display: none;
         z-index: 999;
         top: 50%;
         transform: translate(0%, -50%);
@@ -110,7 +106,7 @@
                 width: 5px;
                 height: 5px;
                 border-radius: 100%;
-                transition: 0.2s;
+                transition: 0.1s;
 
                 .js-scrollTo {
                     width: 100%;

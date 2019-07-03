@@ -88,7 +88,7 @@
         }
 
         .persona-quote {
-            width: 100%;
+            width: 90%;
             text-align: left;
         }
 
@@ -109,7 +109,6 @@
 
         .persona-desc {
             margin: 0;
-            position: absolute;
 
             .persona-name {
                 margin: 0;
@@ -118,7 +117,6 @@
 
             @media (min-width:767.98px) {
                 .persona-job {
-                    max-width: 75%;
                     font-size: 24px;
                     font-weight: 700;
                 }
@@ -154,7 +152,7 @@
 
         .persona-text {
             .scApi {
-                display: none;
+                visibility: hidden;
             }
 
         }
@@ -165,6 +163,9 @@
                 position: relative;
                 width: 100%;
                 text-align: center;
+            }
+            .persona-imgs {
+                margin: auto;
             }
 
         }
@@ -189,8 +190,7 @@
     .row.container-fluid {
         margin: auto;
         width: 90%;
-        padding: 5% 0%;
-
+        padding: 3% 0%;
         @media (max-width:767.98px) {
             .slide-content-2 {
                 display: inline-flex;
@@ -215,12 +215,17 @@
 
     .even.pcontent {
         @media (min-width:991.98px) {
+            .col-12.col-lg-6.persona-text {
+                max-width: 45%;
+            }
             .persona-desc {
                 text-align: right;
-                right: 1%;
+                right: 5%;
                 top: 3%;
+                position: absolute;
 
                 .persona-job {
+                    max-width: 70%;
                     text-align: right;
                     margin-left: auto;
                 }
@@ -268,6 +273,7 @@
                 }
 
                 .persona-icon {
+                    display: none;
                     position: relative;
                     width: 50%;
                     right: 2rem;
@@ -284,25 +290,17 @@
         .persona-desc {
             text-align: left;
         }
-
+        
         @media (min-width:991.98px) {
+            .col-12.col-lg-6.persona-text {
+                max-width: 45%;
+            }
             .persona-desc {
-                top: 3rem;
-                margin-left: 10%;
-            }
-
-            .persona-quote {
-                margin-left: 10%;
-            }
-
-            .persona-bio {
-                .bio-text,
-                .emphasize {
-                    margin-left: 10%;
+                position: absolute;
+                .persona-job {
+                    max-width: 75%;
                 }
-
             }
-
             .persona-imgs {
                 .persona-pic {
                     display: flex;
@@ -330,6 +328,7 @@
                 }
 
                 .persona-icon {
+                    display: none;
                     position: relative;
                     width: 50%;
                     top: -5rem;
@@ -356,5 +355,30 @@
         }
 
     }
+    #discover-content {
+        cursor: pointer;
+        font-weight: 700;
+    }
 
+    body {margin:2rem;}
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
 }
