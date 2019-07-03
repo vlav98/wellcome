@@ -1,0 +1,113 @@
+.mentions {
+    height: 100vh;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+        url("../../assets/images/melanie-pongratz-695443-unsplash.jpg");
+
+    h2, .mentions-text p {
+        color: @light-grey;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    -webkit-animation-name: diapo;
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear; 
+
+    @-webkit-keyframes diapo {
+        0% {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/melanie-pongratz-695443-unsplash.jpg"); }
+        50% {  
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/robert-ruggiero-641170-unsplash.jpg"); }
+        80% { 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/tom-sodoge-1169782-unsplash.jpg"); }
+    }
+    @-moz-keyframes diapo {
+         0% {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/melanie-pongratz-695443-unsplash.jpg"); }
+        50% {  
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/robert-ruggiero-641170-unsplash.jpg"); }
+        80% { 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/tom-sodoge-1169782-unsplash.jpg"); }
+    }
+    @keyframes diapo {
+        0% {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/melanie-pongratz-695443-unsplash.jpg"); }
+        50% {  
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/robert-ruggiero-641170-unsplash.jpg"); }
+        80% { 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0,0.55), rgba(0, 0, 0,0.55)), 
+            url("../../assets/images/tom-sodoge-1169782-unsplash.jpg"); }
+    }
+}
+
+.credits {
+    .container-fluid h2 {
+        padding: 5%;
+    }
+    .pics-content img, .pics p {
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 300px;
+        padding: 0;
+    }
+    .pics-content {
+        height: 250px;
+    }
+    .pics {
+        margin: 1%;
+    }
+}

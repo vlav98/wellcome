@@ -1,0 +1,158 @@
+#wait {
+    .section {
+        height: 100%;
+        text-align: center;
+    padding: 0;
+    }
+    #container {
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        section {
+    /*         h2 {
+        padding-top: 2%;
+        padding-left: 5%; 
+    } */
+            p {
+                text-align: justify;
+            }
+        }
+    }
+    .img {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .even {
+        background-color: @green-secondary;
+        h1, h2, h3, p, label {
+            color: @dark-background;
+        }
+        .team-desc h3 {
+            color: @white;
+        }
+    }
+    .odd {
+        background-color: @dark-blue;
+        h1, h2, h3, p, label, .indicates-required {
+            color: @white;
+        }
+    }
+
+    .Absolute-Center {
+        margin: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .row.container-fluid {
+        margin: auto;
+        width: 80%;
+        padding: 15% 0%;
+        @media (max-width: 767.98px) {
+            .slide-content-2 {
+                display: inline-flex;
+                top: 50%;
+                transform: translateY(50%);
+            }
+        }
+        @media (min-width: 767.98px) {
+            .slide-content-2 {
+                display: block;
+            }
+        }
+        img {
+            min-width: 250px;
+        }
+    }
+
+    #home {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../../assets/images/jason-rosewell-60014-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        
+        #main-title {
+            color: @white;
+            text-transform: @caps;
+            font-size: 40px;
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            padding-bottom: 5px;
+            padding-top: 80px;
+            font-family: @font-title;
+            padding-bottom: 250px;
+            h1 {
+                color: @white;
+            }
+        }
+        
+        #text1{
+            padding-top: 150px;
+            color: @white;
+            width: 50%;
+            margin-left: 4%;
+        }
+        
+    }
+
+    .social {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40vh;
+        perspective: 1000px;
+        width: 100%;
+        a {
+            background: #2DFF88;
+            width: 80px;
+            height: 80px;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-pack: center;
+            justify-content: center;
+            border-radius: 10%;
+            
+            margin: 0 5px;
+            color: @white;
+            font-size: 2rem;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+        a:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)), #2DFF88;
+            text-decoration: none;
+        }
+        a:hover i:before {
+            padding-bottom: 5px;
+            border-bottom: 3px solid @white
+        }
+    }
+}

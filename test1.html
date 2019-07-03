@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css" />
+  <link rel="stylesheet/less" type="text/css" href="css/less/elements/body.less" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/krysta.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Krysta</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/lola.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Lola</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/coralie.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Coralie</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/aida.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Aïda</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/hugo.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Hugo boss</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/quentin.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Quentéton</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/gil.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Gil-lette</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/corentin.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Corentin</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/jananie.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Jananus</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="picture">
+          <img src="assets/images/square/valentine.jpg" alt="">
+        </div>
+        <div class="detail">
+          <h3>Saint valentine</h3>
+          <span>Web Designer</span>
+        </div>
+      </div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <!--     <div class="swiper-button-prev"></div> -->
+    <!--     <div class="swiper-button-next"></div> -->
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true
+      },
+      pagination: {
+        el: ".swiper-pagination"
+      }
+    });
+  </script>
+  <!--dossier test team-->
+</body>
+
+</html>

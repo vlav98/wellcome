@@ -1,0 +1,360 @@
+#main-page {
+    #container {
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+
+        #home {
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../assets/images/aatik-tasneem-138230-unsplashh.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+            #main-title {
+                color: @white;
+                position: relative;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                font-family: @font-title;
+
+                h2 {
+                    color: @white;
+                    width: 50%;
+                    text-align: left;
+                    margin-left: 6%;
+                    text-align: justify;
+                }
+
+            }
+
+            #text1 {
+                color: @white;
+                width: 50%;
+                margin-left: 6%;
+                text-align: justify;
+            }
+
+            #discover {
+                color: @pink;
+                text-align: center;
+                position: absolute;
+                width: 100%;
+                margin: 0 auto;
+                bottom: 1%;
+
+                p {
+                    margin: 0;
+                }
+
+            }
+
+        }
+
+    }
+
+    @media (min-width:991.98px) {
+        .section {
+            max-height: 100vh;
+            text-align: center;
+            padding: 0;
+        }
+
+    }
+
+    .pcontent {
+        display: flex;
+        margin-top: 10%;
+
+        h1,
+        h2,
+        h3,
+        p,
+        label {
+            color: @dark-background;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .persona-quote {
+            width: 100%;
+            text-align: left;
+        }
+
+        .persona-bio {
+            overflow-y: auto;
+            text-align: justify;
+
+            .bio-text {
+                font-size: @body-size14;
+                width: 90%;
+            }
+
+            .emphasize {
+                font-size: @body-size;
+            }
+
+        }
+
+        .persona-desc {
+            margin: 0;
+            position: absolute;
+
+            .persona-name {
+                margin: 0;
+                margin-top: 5%;
+            }
+
+            @media (min-width:767.98px) {
+                .persona-job {
+                    max-width: 75%;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+            }
+
+        }
+
+        .links {
+            display: inline-flex;
+            margin-right: auto;
+            justify-content: center;
+            width: 100%;
+            .button {
+                color: white;
+            }
+
+        }
+
+        .persona-imgs {
+            .persona-pic {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .persona-icon {
+                display: block;
+                width: 50%;
+                max-width: 200px;
+            }
+
+        }
+
+        .persona-text {
+            .scApi {
+                display: none;
+            }
+
+        }
+
+        @media (max-width:767.98px) {
+            .persona-desc,
+            .persona-imgs {
+                position: relative;
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    @media (max-width:991.98px) {
+        .persona-pres {
+            margin-bottom: 1rem;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .pcontent {
+            max-height: unset;
+            margin: 0;
+        }
+    }
+
+    .row.container-fluid {
+        margin: auto;
+        width: 90%;
+        padding: 5% 0%;
+
+        @media (max-width:767.98px) {
+            .slide-content-2 {
+                display: inline-flex;
+                top: 50%;
+                transform: translateY(50%);
+            }
+
+        }
+
+        @media (min-width:767.98px) {
+            .slide-content-2 {
+                display: block;
+            }
+
+        }
+
+        img {
+            min-width: 250px;
+        }
+
+    }
+
+    .even.pcontent {
+        @media (min-width:991.98px) {
+            .persona-desc {
+                text-align: right;
+                right: 1%;
+                top: 3%;
+
+                .persona-job {
+                    text-align: right;
+                    margin-left: auto;
+                }
+
+            }
+
+            .persona-imgs {
+                .persona-icon {
+                    position: absolute;
+                    right: 10rem;
+                    bottom: -6rem;
+                }
+
+            }
+
+        }
+
+        @media (max-width:767.98px) {
+            .persona-imgs {
+                .persona-icon {
+                    display: none;
+                }
+
+            }
+
+        }
+
+        @media (min-width:767.98px) and (max-width:991.98px) {
+            .persona-desc {
+                .persona-job {
+                    text-align: right;
+                    max-width: unset;
+                }
+
+                .persona-name {
+                    text-align: right;
+                }
+
+            }
+
+            .persona-imgs {
+                .persona-pic {
+                    display: flex;
+                    margin-left: auto;
+                }
+
+                .persona-icon {
+                    position: relative;
+                    width: 50%;
+                    right: 2rem;
+                    bottom: 2rem;
+                }
+
+            }
+
+        }
+
+    }
+
+    .odd.pcontent {
+        .persona-desc {
+            text-align: left;
+        }
+
+        @media (min-width:991.98px) {
+            .persona-desc {
+                top: 3rem;
+                margin-left: 10%;
+            }
+
+            .persona-quote {
+                margin-left: 10%;
+            }
+
+            .persona-bio {
+                .bio-text,
+                .emphasize {
+                    margin-left: 10%;
+                }
+
+            }
+
+            .persona-imgs {
+                .persona-pic {
+                    display: flex;
+                    margin-left: auto;
+                    float: right;
+                }
+
+                .persona-icon {
+                    display: block;
+                    position: relative;
+                    width: 50%;
+                    top: -7.5rem;
+                    left: 10rem;
+                }
+
+            }
+
+        }
+
+        @media (min-width:767.98px) and (max-width:991.98px) {
+            .persona-imgs {
+                .persona-pic {
+                    display: flex;
+                    margin-left: auto;
+                }
+
+                .persona-icon {
+                    position: relative;
+                    width: 50%;
+                    top: -5rem;
+                    left: 2rem;
+                }
+
+            }
+
+        }
+
+        @media (max-width:767.98px) {
+            .persona-imgs {
+                .persona-pic {
+                    display: flex;
+                    margin: auto;
+                }
+
+                .persona-icon {
+                    display: none;
+                }
+
+            }
+
+        }
+
+    }
+
+}

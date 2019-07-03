@@ -1,0 +1,132 @@
+/* Menu */
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));/*     transition: top 0.2s ease-in-out; */
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    #logo {
+        width: auto;
+        height: 25px;
+        margin: 15%;
+    }
+
+    @media (max-width:992px) {
+    }
+
+    ul,
+    li,
+    a {
+        color: @white;
+        list-style: none;
+        text-transform: @caps;
+        font-family: @font-title;
+    }
+
+    a {
+        padding: 8px 20px;
+        vertical-align: middle;
+        font-weight: @weight-700;
+        letter-spacing: 0.025em;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    @media (min-width:992px) {
+        ul,
+        li {
+            display: inline;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+        }
+
+    }
+
+    .nav-item:hover a {
+        color: @pink;
+        transition: 0.3s;
+    }
+
+}
+
+@media (min-width:767.98px) {
+    .pagination {
+        display: none;
+        z-index: 999;
+        top: 50%;
+        transform: translate(0%, -50%);
+        position: fixed;
+        right: 1%;
+
+        .qnav-container {
+            list-style-type: none;
+
+            .qnav {
+                margin: 32px;
+                background-color: #B7B7B7;
+                width: 4px;
+                height: 100px;
+                transition: 0.2s;
+
+                .js-scrollTo {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 9999;
+                    display: block;
+                }
+            }
+
+            .qnav:hover {
+                background-color: @dark-grey;
+            }
+
+            .active {
+                background-color: @dark-background;
+            }
+        }
+    }
+}
+@media (max-width:767.98px) {
+    .pagination {
+        display: none;
+        z-index: 999;
+        top: 50%;
+        transform: translate(0%, -50%);
+        position: fixed;
+        right: -3%;
+
+        .qnav-container {
+            list-style-type: none;
+
+            .qnav {
+                margin: 32px;
+                background-color: #B7B7B7;
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                transition: 0.2s;
+
+                .js-scrollTo {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 9999;
+                    display: block;
+                }
+            }
+
+            .qnav:hover {
+                background-color: @dark-grey;
+            }
+
+            .active {
+                background-color: @dark-background;
+            }
+        }
+    }
+}

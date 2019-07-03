@@ -1,0 +1,177 @@
+@import 'variables/colors.less';
+@import 'variables/fonts.less';
+@import 'elements/menu.less';
+@import 'elements/section.less';
+@import 'elements/media-queries.less';
+@import 'elements/footer.less';
+@import 'elements/mentions.less';
+@import 'elements/team.less';
+@import 'elements/contact.less';
+@import 'elements/apropos.less';
+@import 'elements/swiper.less';
+@import 'elements/wait.less';
+
+/* latin-ext */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-display: auto;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v12/Qw3aZQNVED7rKGKxtqIqX5EUA3x4RHw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-display: auto;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v12/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-display: auto;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-display: auto;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html,
+body {
+    line-height: 1.75;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body, button, input {
+    line-height: @lh-24;
+}
+body {
+    font-family: @font-body;
+    font-size: @body-size;
+    font-weight: @weight-400;
+}
+button, input {
+    font-family: @font-body;
+    font-size: @body-size14;
+}
+h1, h2, h3 {
+    font-family: @font-title;
+}
+h1 {
+    font-size: @h1-size;
+    font-weight: @weight-700;
+    line-height: @lh-54;
+
+    @media (max-width: 575.98px) {
+        h1 {
+            font-size: 1.5rem;
+            margin: 5%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+}
+h2 {
+    font-size: @h2-size;
+    font-weight: @weight-700;
+    line-height: @lh-46;
+}
+h3 {
+    font-size: @h3-size;
+    font-weight: @weight-400;
+    line-height: @lh-32;
+}
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+section {
+    min-height: 100vh;
+}
+.row {
+    margin: 0 auto;
+}
+.button {
+    border-radius: 2px;
+}
+@media (max-width: 991.98px) {
+    .img {
+        padding: 25% 0%;
+    }
+}
+@media (max-width: 1199.98px) {
+    .img {
+        padding: 25% 0%;
+    }
+}
+img {
+    width: 100%;
+}
+.button {
+    margin: 10px;
+    min-height: 45px;
+    background-color:  @main-blue;
+    border-radius: 2px;
+    border: none;
+    color: @white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: @weight-700;
+    font-size: @body-size14;
+    transition-delay: 0.1s;
+}
+.button:hover {
+    background-color: @bhover;
+}
+.button:active {
+    background-color: @bfocus;
+}
+.button:disabled {
+    background-color: @bdisabled;
+}
+.asterisk {
+    color: @pink;
+}
+.button-second {
+    min-height: 45px;
+    margin: 10px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    font-weight: @weight-700;
+    color: @main-blue;
+    background-color: @white;
+    border: 1px solid @main-blue;
+    font-size: @body-size14;
+    text-align: center;
+}
+.button-second:hover {
+    color: @bhover;
+    background-color: @white;
+    border: 1px solid @bhover;
+}
+.button-second:active {
+    color: @bfocus;
+    background-color: @white;
+    border: 1px solid @bfocus;
+}
+.button-second:disabled {
+    border-color: @bdisabled;
+}

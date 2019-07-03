@@ -1,0 +1,75 @@
+#team {
+    .team_info img {
+        width: 100%;
+        height: auto;
+    }
+    .team-pic {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        
+        .team-desc {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: @white;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+            text-align: center;
+
+            h3 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+    }
+
+    .team-pic:hover {
+        .team-desc {
+            display: inline-block;
+        }
+    }
+    
+    .team_info {
+        margin: 1%;
+    
+        a > h3 {
+            color: @dark-background;
+            text-align: center;
+        }
+        a:hover {
+            text-decoration: none;
+            border-bottom: 1px solid @main-blue;
+        }
+    }
+
+    .row{
+        height: 200px;
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .row > div{
+    height: 200px;
+    width: 2526px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    }
+}
