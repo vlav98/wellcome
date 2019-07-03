@@ -59,16 +59,17 @@
         gtag('config', 'UA-130261943-1');
     </script>
 
-    <script src="/wellcome/js/lozad/lozad.min.js"></script>
+    <script src="js/lozad/lozad.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css" />
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <link rel="stylesheet/less" type="text/css" href="/wellcome/css/less/main.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -77,16 +78,18 @@
         crossorigin="anonymous"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <script src="/wellcome/js/jquery.scrollify.js"></script>
-    <script src="/wellcome/js/script.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="js/easyView/jquery.font-accessibility.min.js"></script> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body id="main-page">
     <nav class="navbar navbar-expand-lg navbar-dark" id="header" role="navigation">
         <div class="container-fluid">
-            <a class="navbar-brand header-logo" href="https://www.well-come.fr/">
-                <img class="lozad" src="/wellcome/WELLCOME_BLANC.png" alt="WELLCOME" id="logo">
+            <a class="navbar-brand header-logo" href="/">
+                <img class="lozad" src="WELLCOME_BLANC.png" alt="WELLCOME" id="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,8 +98,8 @@
             <div class="header-nav collapse navbar-collapse justify-content-end" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://soundcloud.com/user-721409243" aria-label="SoundCloud" title="Trouvez nos podcasts ici !"
-                            target="_blank" rel="noreferrer">
+                        <a class="nav-link" href="https://soundcloud.com/wellcomepodcasts" aria-label="SoundCloud"
+                            title="Trouvez nos podcasts ici !" target="_blank" rel="noreferrer">
                             <i class="fab fa-soundcloud"></i>
                         </a>
                     </li>
@@ -116,6 +119,30 @@
             </div>
         </div>
     </nav>
+    <div class="access-btn">
+        <i class="fa fa-wheelchair" aria-hidden="true"></i>
+    </div>
+    <div class="access-panel">
+        <div class="panel-content">
+            <div class="font-size-panel">
+                <h4>Taille de Police</h4>
+                <div id="font-setting">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-size decrease-me"><i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-size reset-me"><i class="fa fa-font"></i>
+                        </button>
+                        <button type="button" class="btn btn-size increase-me"><i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-size change-me"><i class="fa fa-adjust"></i>
+                            Contraste</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="pagination" id="main-pagination" role="navigation">
         <ul class="qnav-container">
             <li class="qnav" id="qnav-sekou"><a class="js-scrollTo" href="#sekou"></a></li>
@@ -131,7 +158,7 @@
                         <h2>Changer le regard sur<br /> le handicap en entreprise</h2>
                     </div>
                     <div id="text1">
-                        <p>Les a priori que génèrent le handicap en entrepris à un réel impact
+                        <p>Les a priori que génèrent le handicap en entreprise à un réel impact
                             sur le quotidien des personnes touchées.
                             Well’come c’est des podcasts, des vidéos, des portraits pour dépasser les préjugés.</p>
                     </div>
@@ -148,41 +175,41 @@
                 <div class="row container-fluid">
                     <div class="persona-pres d-flex col-12 col-lg-6 flex-wrap">
                         <div class="persona-desc order-md-1 order-sm-1">
-                            <h1 class="persona-name">Sekou James</h1>
-                            <h3 class="persona-job">Technicien de maintenance des systèmes</h3>
+                            <h1 class="persona-name">Sekou Dosso</h1>
+                            <h3 class="persona-job">Technicien de maintenance des systèmes <span class="pink">et
+                                    daltonien</span></h3>
                         </div>
                         <div class="persona-imgs order-md-0 order-sm-0">
-                            <img class="lozad persona-pic" src="assets/images/maq_pics/1.jpg" data-src="assets/images/maq_pics/1.jpg"
+                            <img class="lozad persona-pic" src="assets/images/sekou/sekou-sqr.jpg" data-src="assets/images/sekou/sekou-sqr.jpg"
                                 alt='Photo de Sekou James'>
-                            <img class="lozad persona-icon" src="assets/images/maq_pics/1_2.jpg" data-src="assets/images/maq_pics/1_2.jpg"
+                            <img class="lozad persona-icon" src="assets/images/sekou/Sekou_2.jpg" data-src="assets/images/sekou/Sekou_2.jpg"
                                 alt="Icone Sekou">
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 persona-text">
-                        <h3 class="persona-quote"><strong>« Je peux travailler en toute efficacité, c'est une vraie
-                                liberté »</strong></h3>
+                        <h3 class="persona-quote"><strong>« Je peux travailler en toute efficacité, </br> c'est une
+                                vraie liberté »</strong></h3>
                         <div class="persona-bio">
                             <p class="bio-text">Travaillant chez Dalkia, entre énergies renouvelables et économies
-                                d'énergie, Sekou a su dépasser son handicap. Il a découvert qu'il était daltonien de
-                                type protan, il a
-                                du mal à donner un nom aux couleurs, dès son plus jeune âge. Mais ça ne l'empêche pas
-                                de travailler et d'être
-                                efficace, il lui a seulement suffit de plus de travail qu'une personne avec une bonne
-                                vision. </p>
-                            <p class="emphasize"><strong>Personnalité débordante d'énergie</strong></p>
+                                d’énergie, Sekou a su dépasser son handicap. Sekou a découvert qu’il était daltonien de
+                                type protan. Il a eu du mal à
+                                donner un nom aux couleurs, dès son plus jeune âge. Mais ça ne l’empêche pas
+                                de travailler et d’être efficace, il lui a seulement suffit plus de travail qu’une
+                                personne avec une bonne vision. </p>
+                            <p class="emphasize"><strong>Une personnalité débordante d’énergie</strong></p>
                             <p class="bio-text">Sekou ne considère pas son daltonisme comme un handicap. Au contraire,
-                                il croque la vie à pleine dent. Très sportif, il pratique la musculation plusieurs fois
-                                par semaine. Il
-                                aime rendre service aux autres et est très attaché à sa famille.</p>
+                                il croque la vie à pleine dent. Très sportif, il pratique la musculation plusieurs
+                                fois par semaine. Il aime rendre service aux autres et est très attaché à sa
+                                famille.</p>
                         </div>
                         <div class="links">
                             <button class="button podcast-btn"> Ecouter le podcast </button>
-                            <a href="" class="button-second"> Voir la vidéo </a>
+                            <button type="button" class="button-second video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/CiqGFNBTBnw"
+                                data-target="#modal-sekou"> Voir la vidéo </button>
                         </div>
-                        <!-- 
                         <div class="scApi">
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ color:#2D63F4 ; buying: true; liking: true; sharing: true; download: true; show_artwork: true; show_user: true; }">
-                        </div> -->
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/544027452&color=%233865d7&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -191,26 +218,25 @@
             <section id="sandra" class="even pcontent">
                 <div class="row container-fluid d-flex">
                     <div class="col-12 col-lg-6 persona-text">
-                        <h3 class="persona-quote"><strong>« En général, quand je suis au travail, j'essaye
-                                d'oublier ce qui s'est passé la
-                                veille, et d'avancer malgré mes difficultés. Je relativise tous les jours »</strong></h3>
+                        <h3 class="persona-quote"><strong>« En général, quand je suis au travail, j’essaye d’oublier ce
+                                qui s’est passé la
+                                veille, et d’avancer malgré mes difficultés. Je relativise tous les jours »</strong></h3>
                         <div class="persona-bio">
-                            <p class="bio-text">Sandra est malentendante de naissance, et n'a jamais annoncé son
-                                handicap lors de sa recherche d'emploi. Car pour elle, il faut qu'on juge sur les
-                                compétences, et qu'on aide si
-                                besoin avec des dispositifs adaptés.</p>
-                            <p class="bio-text"> Prendre un peu plus de temps, avoir un écran adapté ou un siège
-                                spécial ou avoir à répéter n'est pas ni plus long ni plus fatiguant que pour les autres
-                                qui serait susceptible d'être formé à un nouveau
-                                poste
+                            <p class="bio-text">Sofia est malentendante de naissance, est n’a jamais annoncé son
+                                handicap
+                                lors de sa recherche d’emploi.
+                                Car pour elle, Il faut qu’on juge sur les compétences, et qu’on aide si besoin
+                                avec des dispositifs adaptés.
                             </p>
-                            <p class="bio-text">Pour elle et contrairement à ce que beaucoup de personnes peuvent
-                                penser, un handicap ne nuit pas à la qualité de travail d'une personne.
+                            <p class="bio-text">Prendre un peu plus de temps, avoir un écran
+                                adapté, un siège spécial ou avoir à répéter n’est pas ni plus long ni plus
+                                fatiguant que pour les autres qui seraient susceptibles d’être formés à un
+                                nouveau poste en entreprise.
                             </p>
                         </div>
                         <div class="links">
-                            <button class="button podcast-btn"> Ecouter le podcast </button>
-                            <a href="" class="button-second"> Voir la vidéo </a>
+                            <button class="button podcast-btn" disabled> Ecouter le podcast </button>
+                            <a href="" class="button-second button-disabled"> Voir la vidéo </a>
                         </div>
                         <!-- 
                         <div class="scApi">
@@ -219,8 +245,9 @@
                     </div>
                     <div class="persona-pres d-flex col-12 col-lg-6 flex-wrap order-first order-lg-1">
                         <div class="persona-desc order-md-1 order-sm-1">
-                            <h1 class="persona-name">Sandra Panetier</h1>
-                            <h3 class="persona-job">Chargée de communication</h3>
+                            <h1 class="persona-name">Sofia Panetier</h1>
+                            <h3 class="persona-job">Alternante chargé de
+                                communication <span class="pink">et malentendante</span></h3>
                         </div>
                         <div class="persona-imgs order-md-0 order-sm-0">
                             <img class="lozad persona-pic" src="assets/images/maq_pics/2.jpg" data-src="assets/images/maq_pics/2.jpg"
@@ -237,8 +264,8 @@
                 <div class="row container-fluid">
                     <div class="persona-pres d-flex col-12 col-lg-6 flex-wrap">
                         <div class="persona-desc order-md-1 order-sm-1">
-                            <h1 class="persona-name">Sam Klunch</h1>
-                            <h3 class="persona-job">Professeur au collège </h3>
+                            <h1 class="persona-name">Maxime Klunch</h1>
+                            <h3 class="persona-job">Professeur au collège <span class="pink">et malvoyant</span></h3>
                         </div>
                         <div class="persona-imgs order-md-0 order-sm-0">
                             <img class="lozad persona-pic" src="assets/images/maq_pics/3.jpg" data-src="assets/images/maq_pics/3.jpg"
@@ -248,26 +275,28 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 persona-text">
-                        <h3 class="persona-quote"><strong>« Je ne suis jamais passé par un cabinet de recrutement
-                                spécialisé car leur plan
-                                de communication n'est pas le bon. »</strong></h3>
+                        <h3 class="persona-quote"><strong>« Malgré les difficultés, je ne suis jamais passé par un
+                                cabinet de recrutement
+                                spécialisé. La plupart du temps, ça ne correspondait pas à mon profil. C’est assez mal
+                                fait, et surtout, il y a
+                                un mauvais plan de communication à ce niveau. »</strong></h3>
                         <div class="persona-bio">
-                            <p class="bio-text">Pour Sam, le handicap au travail est une particularité qui oblige à
-                                faire autrement, à créer d'autres liens, à partager l'espace-classe.
-                                Certes les élèves le testent, sans doute, et profitent du fait qu'il ne voit pas toute
-                                la salle précisément lorsque il est au bureau.
-                                Mais pour lui tout se passe fondamentalement bien, il n'a le droit à aucunes
-                                réflexions.
+                            <p class="bio-text">Pour Maxime, le handicap au travail est une particularité qui oblige à
+                                faire
+                                autrement, à créer d’autres liens, à partager l’espace-classe.
+                                Certes les élèves le testent, sans doute, et profitent du fait qu’il ne vois pas
+                                toute la salle précisément lorsque il est au bureau. Mais pour lui tout se passe
+                                fondamentalement bien, il n’a le droit à aucune réflexion.
                             </p>
-                            <p class="bio-text"> Ses collègues n'établissent pas de barrières entre eux et lui, bien au
-                                contraire. Néanmoins, il est conscient que son handicap fait porter une responsabilité
-                                supplémentaire aux
-                                dirigeants du collège qui l'accueille.
+                            <p class="bio-text">
+                                Ses collègues n’ établissent pas de barrières entre eux et lui, bien au contraire.
+                                Néanmoins, il est conscient que son handicap fait porter une responsabilité
+                                supplémentaire aux dirigeants du lycée qui l’accueille.
                             </p>
                         </div>
                         <div class="links">
-                            <button class="button podcast-btn"> Ecouter le podcast </button>
-                            <a href="" class="button-second"> Voir la vidéo </a>
+                            <button class="button podcast-btn" disabled> Ecouter le podcast </button>
+                            <a href="" class="button-second button-disabled"> Voir la vidéo </a>
                         </div>
                         <!-- 
                         <div class="scApi">
@@ -278,6 +307,29 @@
             </section>
         </div>
     </div>
+
+    <div class="modal fade" id="modal-sekou" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+
+                <div class="modal-body">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always">></iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <footer class="page-footer" role="contentinfo">
         <div class="container-fluid text-center text-md-left">
             <div class="footer-copyright  navbar navbar-expand-lg navbar-dark">
@@ -286,7 +338,7 @@
                         <div class="cr-text">
                             Well'Come © Tous droits réservés
                         </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerResp"
+                        <button class="navbar-toggler" id="footer-btn" type="button" data-toggle="collapse" data-target="#footerResp"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -294,8 +346,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="footerResp">
                         <ul class="footer-nav navbar-nav">
                             <li class="nav-item"><a class="nav-link js-scrollTo" href="apropos.html">A propos</a></li>
-                            <li class="nav-item"><a class="nav-link js-scrollTo" href="#newsletter">Newsletter</a></li>
-                            <li class="nav-item"><a class="nav-link js-scrollTo" href="#contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link js-scrollTo" href="apropos.html#contact">Contact</a></li>
                             <li class="nav-item"><a class="nav-link js-scrollTo" href="mentions.html">Mentions légales</a></li>
                         </ul>
                     </div>
@@ -339,24 +390,51 @@
                 el: ".swiper-pagination"
             }
         });
+        /* 
+                $(function () {
+                    $('#font-setting-buttons').easyView({
+                        container: 'body',
+                        tags: ['h1','h2','h3','h4','h5','h6', 'div', 'p', 'a', 'span', 'strong', 'em', 'ul', 'ol', 'li'],
+                        step: 10,
+                        bootstrap: true,
+                        increaseSelector: '.increase-me',
+                        decreaseSelector: '.decrease-me',
+                        normalSelector: '.reset-me',
+                        contrastSelector: '.change-me'
+                    });
+                }); */
+    </script>
+    <script>
+        AOS.init();
     </script>
     <!-- SOUNDCLOUD API -->
-
-    <script type="text/javascript" id="cookieinfo" src="/wellcome/js/cookieinfo/cookieinfo.min.js" data-message="Nous utilisons des cookies pour améliorer votre expérience sur notre site.
+    <script type="text/javascript" id="cookieinfo" src="js/cookieinfo/cookieinfo.min.js" data-message="Nous utilisons des cookies pour améliorer votre expérience sur notre site.
         En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies."
         data-linkmsg="Plus d'informations sur les cookies ici !" data-link="#2D63F4" data-divlinkbg="#F4BE2D">
     </script>
-    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.1.js"></script>
     <script>
-        SC.initialize({
-            client_id: 'YOUR_CLIENT_ID'
-        });
+        $(document).ready(function () {
+            // Gets the video src from the data-src on each button
+            var $videoSrc;
+            $('.video-btn').click(function () {
+                $videoSrc = $(this).data("src");
+            });
+            console.log($videoSrc);
 
-        var track_url = 'http://soundcloud.com/forss/flickermood';
-        SC.oEmbed(track_url, {
-            auto_play: true
-        }).then(function (oEmbed) {
-            console.log('oEmbed response: ', oEmbed);
+            // when the modal is opened autoplay it  
+            $('#modal-sekou').on('shown.bs.modal', function (e) {
+
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src', $videoSrc +
+                    "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1");
+            })
+            // stop playing the youtube video when I close the modal
+            $('#modal-sekou').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src', $videoSrc);
+            })
+            // document ready  
+
         });
     </script>
 </body>

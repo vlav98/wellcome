@@ -2,14 +2,17 @@
 <html xmls:og="http://ogp.me/ns#" lang="fr">
 
 <head>
-    <!-- <meta http-equiv="refresh" content="1; URL=maintenance.html" /> -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Well'come" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-    <meta name="keywords" content="wellcome, handicap, entreprise, préjugés, a prioris" />
+    <meta name="keywords" content="wellcome, handicap, entreprise, préjugés, a prioris, well come fr, podcast, soundcloud" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache" content="no store" />
+    <meta http-equiv="Expires" content="-1" />
     <!-- OPEN GRAPH -->
-    <meta property="og:audio" content="" />
+    <meta property="og:audio" content="https://soundcloud.com/user-218771475" />
     <meta property="og:description" content="Valoriser l’humanité des personnes en situation
                                      de handicap en podcast et en vidéo." />
     <meta property="og:determiner" content="the" />
@@ -22,10 +25,10 @@
     <meta name="twitter:title" content="Well'Come" />
     <meta name="twitter:description" content="Valoriser l’humanité des personnes en situation
                                      de handicap en podcast et en vidéo." />
-    <!-- <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" /> -->
+    <meta name="twitter:image" content="/assets/images/logos/WELLCOME_BLEU.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Well'Come</title>
+    <title>A propos de Well'Come</title>
     <meta property="og:title" content="Well'come" />
     <meta property="og:url" content="https://www.well-come.fr/" />
     <meta property="og:image" content="" />
@@ -57,6 +60,8 @@
         gtag('config', 'UA-130261943-1');
     </script>
 
+    <script src="js/lozad/lozad.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css" />
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
@@ -64,20 +69,26 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <link rel="stylesheet/less" type="text/css" href="/wellcome/css/less/main.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="/wellcome/js/jquery.scrollify.js"></script>
-    <script src="/wellcome/js/script.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
 
 </head>
 
 <body id="main-about">
     <nav class="navbar navbar-expand-lg navbar-dark" id="header" role="navigation">
         <div class="container-fluid">
-            <a class="navbar-brand header-logo" href="/wellcome/">
-                <img class="lozad" class="lozad" src="WELLCOME_BLANC.png" alt="WELLCOME" id="logo">
+            <a class="navbar-brand header-logo" href="https://www.well-come.fr/">
+                <img class="lozad" src="WELLCOME_BLANC.png" alt="WELLCOME" id="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,13 +97,22 @@
             <div class="header-nav collapse navbar-collapse justify-content-end" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Accueil</a>
+                        <a class="nav-link" href="https://soundcloud.com/wellcomepodcasts" aria-label="SoundCloud"
+                            title="Trouvez nos podcasts ici !" target="_blank" rel="noreferrer">
+                            <i class="fab fa-soundcloud"></i>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
+                        <a class="nav-link" href="https://www.linkedin.com/company/wellcomefr/" aria-label="Linked In"
+                            title="Ici Notre compte linkedin, cliquez" target="_blank" rel="noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="https://www.instagram.com/well_come.fr" aria-label="Instagram" title="Ici ce trouve notre instagram, cliquez"
+                            target="_blank" rel="noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -114,22 +134,22 @@
         <div class="container-fluid section">
             <section id="slide1" class="slide">
                 <div class="row container slide-content-2">
-                    <div class="slide-content col slide2img Absolute-Center">
-                        <img class="mySlides" src="/assets/images/IMG_5408.JPG" style="width:100%">
-                        <img class="mySlides" src="/assets/images/IMG_5383.JPG" style="width:100%">
-                        <img class="mySlides" src="/assets/images/IMG_5382.JPG" style="width:100%">
-                        <img class="mySlides" src="/assets/images/IMG_5648.JPG" style="width:100%">
+                    <div class="slide-content col col-12 col-md-* slide2img Absolute-Center order-2 order-lg-0">
+                        <img class="mySlides" src="assets/images/IMG_5408.JPG" style="width:100%">
+                        <img class="mySlides" src="assets/images/IMG_5383.JPG" style="width:100%">
+                        <img class="mySlides" src="assets/images/IMG_5382.JPG" style="width:100%">
+                        <img class="mySlides" src="assets/images/IMG_5648.JPG" style="width:100%">
                     </div>
                     <div class="col slide-content">
-                        <h2 class="slide-title">À la tête de Well'come</h2>
-                        <p>Vous ne le savez peut-être pas, mais il est possible que vous cotoyiez tous les jours une
+                        <h2 class="slide-title">Qui sommes-nous ?</h2>
+                        <p class="whoareu">Vous ne le savez peut-être pas, mais il est possible que vous cotoyiez tous les jours une
                             personne qui a un handicap invisible au sein de votre travail.</br>
-                            Vous vous dites que cet personne doit être bizarre? Qu'elle n'est pas sociable? Ou tout
-                            simplement qu'elle essaye de dissimulé son handicap?</br>
+                            Est-ce que vous vous êtes déjà demandé si cette personne est bizarre ? Qu'elle n'est pas sociable ? Ou tout
+                            simplement qu'elle essaye de dissimuler son handicap ? Comment les aider, ou comment les comprendre ?</br>
                             Notre agence Well'come est une association qui soutient les personnes se trouvant dans une
-                            situation d'handicap.</br>
-                            Nous valorisons l'humanité des personnes souffrants d'handicap en podcats et vidéo. </br>
-                            Notre but est de montrer que l'handicap n'est pas un obstacle pour le développement d'une
+                            situation d'handicap, peu importe si le handicap est ponctuel ou permanent.</br>
+                            Valoriser l'humanité des personnes souffrants d'handicap est notre objectif. Cet objectif se représentera sous la forme de podcats et vidéo. </br>
+                            Notre but est de montrer que l'handicap n'est pas un obstacle dans le développement d'une
                             entreprise.</p>
                     </div>
                 </div>
@@ -138,7 +158,7 @@
         <div class="container-fluid section">
             <section id="slide2" class="slide">
                 <div class="row container slide-content-2">
-                    <div class="col slide-content">
+                    <div class="col-12 col-md slide-content">
                         <h2 id="handi-tives">Des témoignages pour ouvrir ensemble de nouvelles perspectives sur le
                             handicap.</h2>
                         <p>L'association Well'Come a pour but de valoriser l’humanité des personnes en situation de
@@ -147,137 +167,242 @@
                             de vidéo pour raconter et décrypter leur quotidien au travail.</p>
                     </div>
                     <div class="col slide2img Absolute-Center slide-content">
-                        <img class="lozad" class="lozad" src="/assets/images/woman-girl-technology-music.jpg" data-src="assets/images/woman-girl-technology-music"
+                        <img class="lozad" class="lozad" src="assets/images/woman-girl-technology-music.jpg" data-src="assets/images/woman-girl-technology-music.jpg"
                             class="img" alt='Photo de siddharth siddharth-bhogra sur Unsplash'>
                     </div>
                 </div>
             </section>
         </div>
+        <div class="container-fluid section">
+            <section class="" id="contact">
+                <h2>CONTACT</h2>
+                <!-- Begin Mailchimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="https://well-come.us19.list-manage.com/subscribe/post?u=0d9858b239cd6c41a2bfa3526&amp;id=1207e0d93b"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <h2>Inscrivez-vous à notre newsletter :</h2>
+                            <div class="mc-field-group">
+                                <label for="mce-LNAME">Nom <span class="asterisk">*</span>
+                                </label>
+                                <input type="text" value="" name="LNAME" class="required short-input" id="mce-LNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">Prénom <span class="asterisk">*</span>
+                                </label>
+                                <input type="text" value="" name="FNAME" class="required short-input" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Adresse e-mail <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-MMERGE3">Nom d'entreprise </label>
+                                <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-PHONE">Numéro de téléphone </label>
+                                <input type="text" name="PHONE" class="short-input" value="" id="mce-PHONE">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div class="indicates-required"><span class="asterisk">*</span> requis </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0d9858b239cd6c41a2bfa3526_1207e0d93b"
+                                    tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe"
+                                    class="button"></div>
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>
+                    (function ($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0] = 'EMAIL';
+                        ftypes[0] = 'email';
+                        fnames[1] = 'LNAME';
+                        ftypes[1] = 'text';
+                        fnames[2] = 'FNAME';
+                        ftypes[2] = 'text';
+                        fnames[3] = 'MMERGE3';
+                        ftypes[3] = 'text';
+                        fnames[4] = 'PHONE';
+                        ftypes[4] = 'phone';
+                        /*
+                         * Translated default messages for the $ validation plugin.
+                         * Locale: FR
+                         */
+                        $.extend($.validator.messages, {
+                            required: "Ce champ est requis.",
+                            remote: "Veuillez remplir ce champ pour continuer.",
+                            email: "Veuillez entrer une adresse email valide.",
+                            url: "Veuillez entrer une URL valide.",
+                            date: "Veuillez entrer une date valide.",
+                            dateISO: "Veuillez entrer une date valide (ISO).",
+                            number: "Veuillez entrer un nombre valide.",
+                            digits: "Veuillez entrer (seulement) une valeur numérique.",
+                            creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
+                            equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
+                            accept: "Veuillez entrer une valeur avec une extension valide.",
+                            maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
+                            minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
+                            rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
+                            range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
+                            max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
+                            min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
+                        });
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);
+                </script>
+                <!--End mc_embed_signup-->
+            </section>
+        </div>
         <div class="container-fluid section" id="team">
-            <section class="slide">
+            <section class="global-swipe">
                 <h2> TEAM </h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/krystel-cadran-a9aa87139/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" data-src="/assets/images/teammates/square/krysta.jpg"
-                                        src="assets/images/teammates/square/krysta.jpg" alt="Photo de Krystel">
-                                    <div class="team-desc">
-                                        <h3> Maman de l'équipe </h3>
-                                    </div>
+                <!-- Slider main container -->
+                <div class="team-swipe">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/krysta.jpg" alt="">
                                 </div>
-                                <h3>Krysta</h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/lola-m-187a00b6/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/lola.jpg"
-                                        data-src="assets/images/teammates/square/lola.jpg" alt="Photo de Lola">
-                                    <div class="team-desc">
-                                        <h3> Vice-chef de projet </h3>
-                                    </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/krystel-cadran-a9aa87139/">
+                                        <h3>Krysta</h3>
+                                        <span>Chef de projet</span>
+                                        <span>La maman de l'équipe</span>
+                                    </a>
                                 </div>
-                                <h3>Lola</h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/coralie-motte-b9b667138/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/coralie.jpg"
-                                        data-src="assets/images/teammates/square/coralie.jpg" alt="Photo de Coralie">
-                                    <div class="team-desc">
-                                        <h3> </h3>
-                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/lola.jpg" alt="">
                                 </div>
-                                <h3>Coralie</h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/aida-dahmani/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/aida.jpg"
-                                        data-src="assets/images/teammates/square/aida.jpg" alt="Photo de Aïda">
-                                    <div class="team-desc">
-                                        <h3> Réalisatrice Motion </h3>
-                                    </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/lola-m-187a00b6/">
+                                        <h3>Lola</h3>
+                                        <span>UX; Community Manager et vice-chef de projet</span>
+                                        <span>Notre dose de folie</span>
+                                    </a>
                                 </div>
-                                <h3>Aida </h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/hugo-ollivier/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/hugo.jpg"
-                                        data-src="assets/images/teammates/square/hugo.jpg" alt="Photo de Hugo">
-                                    <div class="team-desc">
-                                        <h3>Le champion de l'équipe</h3>
-                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/coralie.jpg" alt="">
                                 </div>
-                                <h3>Hugo</h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/quentin-augrain-531208140/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/quentin.jpg"
-                                        data-src="assets/images/teammates/square/quentin.jpg" alt="Photo de Quentin">
-                                    <div class="team-desc">
-                                        <h3>Quentéton</h3>
-                                    </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/coralie-motte-b9b667138/">
+                                        <h3>Coralie</h3>
+                                        <span>Motion Designer</span>
+                                        <span>Notre vitamine C</span>
+                                    </a>
                                 </div>
-                                <h3>Quentin</h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/gilbarbosa/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/gil.jpg"
-                                        data-src="assets/images/teammates/square/gil.jpg" alt="Photo de Gil">
-                                    <div class="team-desc">
-                                        <h3>Sosie officielle de Slimane</h3>
-                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/aida.jpg" alt="">
                                 </div>
-                                <h3>Gil</h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/corentinbrugnon/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/corentin.jpg"
-                                        data-src="assets/images/teammates/square/corentin.jpg" alt="Photo de Corentin">
-                                    <div class="team-desc">
-                                        <h3>Mr. Charte Graphique</h3>
-                                    </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/aida-dahmani/">
+                                        <h3>Aïda</h3>
+                                        <span>Motion Designer</span>
+                                        <span>Notre adorable chauve-souris</span>
+                                    </a>
                                 </div>
-                                <h3>Corentin</h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/jananie-kuganesan-b63834175/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/jananie.jpg"
-                                        data-src="assets/images/teammates/square/jananie.jpg" alt="Photo de Jananie">
-                                    <div class="team-desc">
-                                        <h3> Développeuse web </h3>
-                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/hugo.jpg" alt="">
                                 </div>
-                                <h3>Jananie</h3>
-                            </a>
-                        </div>
-                        <div class="team_info col">
-                            <a href="https://www.linkedin.com/in/valentine-lav/">
-                                <div class="team-pic">
-                                    <img class="lozad" class="lozad" src="/assets/images/teammates/square/valentine.jpg"
-                                        data-src="assets/images/teammates/square/valentine.jpg" alt="Photo de Valentine">
-                                    <div class="team-desc">
-                                        <h3> Geek fan de musique asiatique </h3>
-                                    </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/hugo-ollivier/">
+                                        <h3>Hugo</h3>
+                                        <span>Web Designer</span>
+                                        <span>Notre champion</span>
+                                    </a>
                                 </div>
-                                <h3>Valentine</h3>
-                            </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/quentin.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/quentin-augrain-531208140/">
+                                        <h3>Quentin</h3>
+                                        <span>Couteau suisse</span>
+                                        <span>Notre Dj musique</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/gil.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/gilbarbosa/">
+                                        <h3>Gil</h3>
+                                        <span>Graphiste</span>
+                                        <span>Notre arme discrète</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/corentin.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/corentinbrugnon/">
+                                        <h3>Corentin</h3>
+                                        <span>Graphiste</span>
+                                        <span>Notre Monsieur Charte Graphique</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/jananie.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/jananie-kuganesan-b63834175/">
+                                        <h3>Jananie</h3>
+                                        <span> Développeuse web </span>
+                                        <span>Notre pensée directe</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="picture">
+                                    <img class="lozad" src="assets/images/teammates/square/valentine.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <a href="https://www.linkedin.com/in/valentine-lav/">
+                                        <h3>Valentine</h3>
+                                        <span> Développeuse Web</span>
+                                        <span>Notre fan n°1</span>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <!--     <div class="swiper-button-prev"></div> -->
+                        <!--     <div class="swiper-button-next"></div> -->
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </section>
@@ -285,19 +410,22 @@
     </div>
     <footer class="page-footer" role="contentinfo">
         <div class="container-fluid text-center text-md-left">
-            <div class="footer-copyright">
+            <div class="footer-copyright  navbar navbar-expand-lg navbar-dark">
                 <div class="row">
-                    <div class="col copyright">
+                    <div class="copyright">
                         <div class="cr-text">
                             Well'Come © Tous droits réservés
                         </div>
+                        <button class="navbar-toggler" id="footer-btn" type="button" data-toggle="collapse" data-target="#footerResp"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
-                    <div class="col-8 d-flex justify-content-end">
-                        <ul class="footer-nav">
-                            <li class="nav-item"><a href="apropos.html">A propos</a></li>
-                            <li class="nav-item"><a href="#newsletter">Newsletter</a></li>
-                            <li class="nav-item"><a href="#contact">Contact</a></li>
-                            <li class="nav-item"><a href="mentions.html">Mentions légales</a></li>
+                    <div class="collapse navbar-collapse justify-content-end" id="footerResp">
+                        <ul class="footer-nav navbar-nav">
+                            <li class="nav-item"><a class="nav-link js-scrollTo" href="apropos.html">A propos</a></li>
+                            <li class="nav-item"><a class="nav-link js-scrollTo" href="apropos.html#contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link js-scrollTo" href="mentions.html">Mentions légales</a></li>
                         </ul>
                     </div>
                 </div>
@@ -305,7 +433,6 @@
         </div>
         <!-- Copyright -->
     </footer>
-    </div>
 
     <!-- Hotjar Tracking Code for well-come.fr -->
     <script>
@@ -324,11 +451,26 @@
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-    <script type="text/javascript" id="cookieinfo" src="/wellcome/js/cookieinfo/cookieinfo.min.js" data-message="Nous utilisons des cookies pour améliorer votre expérience sur notre site.
+    <script type="text/javascript" id="cookieinfo" src="js/cookieinfo/cookieinfo.min.js" data-message="Nous utilisons des cookies pour améliorer votre expérience sur notre site.
         En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies."
         data-linkmsg="Plus d'informations sur les cookies ici !" data-link="#2D63F4" data-divlinkbg="#F4BE2D">
     </script>
     <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1109375,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
         var myIndex = 0;
         carousel();
 
@@ -345,6 +487,27 @@
             x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 2000); // Change image every 2 seconds
         }
+        /* Swiper */
+        var swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 350,
+                modifier: 1,
+                slideShadows: true
+            },
+            pagination: {
+                el: ".swiper-pagination"
+            }
+        });
+    </script>
+    <script type="text/javascript" id="cookieinfo" src="js/cookieinfo/cookieinfo.min.js" data-message="Nous utilisons des cookies pour améliorer votre expérience sur notre site.
+        En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies."
+        data-linkmsg="Plus d'informations sur les cookies ici !" data-link="#2D63F4" data-divlinkbg="#F4BE2D">
     </script>
 </body>
 
